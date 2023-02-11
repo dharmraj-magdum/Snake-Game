@@ -45,7 +45,7 @@ function nextTick() {
 			checkGameOver();
 			//resursive ticks
 			nextTick();
-		}, 150);
+		}, 130);
 	} else {
 		drawSnake();
 		displayGameOver();
@@ -119,13 +119,12 @@ function drawSnake() {
 		}
 	}
 }
+const LEFT = 37;
+const UP = 38;
+const RIGHT = 39;
+const DOWN = 40;
 function changeDirection(event) {
 	const keyPressed = event.keyCode;
-	const LEFT = 37;
-	const UP = 38;
-	const RIGHT = 39;
-	const DOWN = 40;
-
 	switch (true) {
 		case keyPressed == LEFT && !xVelocity:
 			xVelocity = -unitSize;
