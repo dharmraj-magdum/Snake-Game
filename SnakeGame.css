@@ -13,6 +13,7 @@ body {
 	margin: auto;
 	padding: 1rem;
 	text-align: center;
+	overflow: hidden;
 }
 #gameBoard {
 	/* dont specify dimention for canvas they cause scaling issues */
@@ -21,15 +22,18 @@ body {
 	border: 3px solid;
 }
 .action {
-	width: 100%;
+	width: 60vw;
+	max-width: 70%;
+	margin: auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
 .scoreText {
+	width: 65%;
+	text-align: left;
 	font-family: "Permanent Marker", cursive;
 	font-size: 3.5rem;
-	width: 25rem;
 }
 #resetBtn {
 	font-family: "Permanent Marker", cursive;
